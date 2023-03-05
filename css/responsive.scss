@@ -1,0 +1,434 @@
+@import 'general';
+@import 'utils';
+
+@media (min-width: 1200px) {
+    .for_page .contaner {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1139px) {
+    header {
+        ul {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        .row {
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        nav.nav {
+            display: none;
+        }
+
+        .nav_vision {
+            display: flex;
+        }
+
+        div.gamburger_menu {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 30px;
+
+            &:hover {
+                cursor: pointer;
+                fill: $vividColor;
+            }
+        }
+
+        .hide_menu {
+            display: none;
+        }
+
+        ul.nav_bar_list {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: -90px;
+            top: 95px;
+            transition: all 0.3s linear;
+
+            li {
+                background: rgb(255, 255, 255, 0.8);
+                padding-bottom: 5px;
+                border-bottom: 1px solid $darkColor;
+                padding: 10px;
+                font-size: $fontS23;
+            }
+
+        }
+    }
+
+    section#about_us {
+
+        h3 {
+            font-size: $fontS26;
+        }
+
+        .p-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .row_about_us2 {
+            margin: 50px 0 100px 0;
+
+            .p1 {
+                margin: 0 0 35px 0;
+
+            }
+        }
+
+        .row_about_us3 {
+            padding: 0 150px;
+        }
+    }
+
+    section#portfolio {
+        .take_a_look {
+            padding: 0 100px;
+        }
+    }
+
+    #check_box {
+        display: flex;
+        flex-direction: column;
+
+        .cb_block1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .cb_block2 {
+            display: block;
+        }
+
+        .cb_block3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    section#our_skills {
+        .our_skills_block_1 {
+            text-align: center;
+            padding: 30px 100px 30px 100px;
+        }
+
+        .our_skills_block_2 {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    section.our_team {
+        .team_photos {
+            padding: 0 40px;
+
+            .team_img {
+
+                div:first-child {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    section.testimonials {
+        padding: 40px 0 120px 0;
+
+        .testimonials_word {
+            font-size: 120px;
+            left: 50%;
+        }
+
+        .testimonials_desc {
+            margin: 0 150px 30px;
+        }
+    }
+
+    section.daily_planet {
+        padding: 50px 0 50px 0;
+
+        .news-cards {
+            row-gap: 30px;
+        }
+
+        .content-center {
+            // display: flex;
+            // justify-content: center;
+            text-align: center;
+        }
+
+        .desc {
+            margin-bottom: 10px;
+        }
+
+        .view_more {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    section.contact_us {
+        padding: 50px 0 70px 0;
+
+        .address_and_info-main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .form {
+            padding: 0 60px;
+            justify-content: center;
+
+            textarea {
+                margin: 30px 0 30px 0;
+            }
+
+            .for-btn {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    footer {
+        padding: 50px 50px;
+
+        .footer-logo-text {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 881px) {
+    section#about_us {
+        .row_about_us2 {
+            .p-main {
+                .p1 {
+                    font-size: $fontS20 ;
+
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    section#about_us {
+        padding: 20px 0;
+        text-align: center;
+
+        .about_us_logo {
+            font-size: 100px;
+        }
+
+        .row_about_us1 {
+            margin: 0 0 40px 0;
+
+            .about_us_del_padd {
+                padding-left: 0;
+            }
+        }
+
+        .row_about_us2 {
+            margin: 0 0 70px 0;
+
+            .p-main {
+                margin: 30px 0 0 0;
+            }
+        }
+
+        .row_about_us3 {
+            .about_us_card {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    section.testimonials {
+        padding: 0 0 100px 0;
+
+        .testimonials_word {
+            font-size: 100px;
+        }
+
+        .testimonials_desc {
+            margin: 0 70px 30px;
+        }
+    }
+
+    footer {
+        .footer_flex {
+            justify-content: space-between;
+            text-align: start;
+
+            ul {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .myBtn {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.banner {
+        .container {
+            padding: 200px 0 250px 0;
+        }
+
+        h1 {
+            font-size: $fontS40;
+        }
+    }
+
+    section#about_us {
+        .about_us_logo {
+            font-size: 70px;
+            line-height: normal;
+        }
+
+        .row_about_us3 {
+            padding: 0 20px;
+        }
+    }
+
+    section#portfolio {
+        .take_a_look {
+            div:first-child {
+                margin-bottom: 20px;
+            }
+            padding: 0 ;
+            text-align: center;
+        }
+
+        .latest_work_logo {
+            font-size: 70px;
+            line-height: normal;
+        }
+    }
+
+    #check_box {
+        .cb_block1 {
+            display: block;
+        }
+
+        .cb_block3 {
+            display: block;
+        }
+    }
+
+    section#our_skills {
+        .our_skills_block_1 {
+            padding: 30px 20px 30px 20px;
+        }
+
+        .our_skills_block_2 {
+            width: 90%;
+            padding: 0 40px;
+        }
+    }
+
+    section#team {
+        padding: 40px 0 80px 0;
+        
+        .team_photos {
+            padding: 0 ;
+        }
+
+        a.myBtn {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    
+    }
+
+    section.testimonials {
+        padding: 20px 0 50px 0;
+
+        .testimonials_word {
+            font-size: 70px;    
+            line-height: normal;
+        }
+
+        .testimonials_desc {
+            margin: 0 30px 20px;
+        }
+    }
+
+    section#news {
+        .view_more {
+            border-bottom: 2px solid $lighestGreyColor;
+            width: 70%;
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
+    }
+
+    section.contact_us {
+        padding: 30px 0 50px 0;
+
+        .address_and_info-main {
+            display: block;
+            text-align: center;
+        }
+
+        .form {
+            padding: 0 60px;
+            justify-content: center;
+
+            textarea {
+                margin: 30px 0 30px 0;
+            }
+
+            .for-btn {
+                display: flex;
+                justify-content: center;
+            }
+            .inputs {
+                display: block;
+                input:first-child {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+    }
+
+    footer {
+        padding: 50px 0;
+        .footer_flex {
+            ul {
+                li a {
+                    font-size: 12px;
+                }
+            }
+            
+        }
+      
+    }
+}

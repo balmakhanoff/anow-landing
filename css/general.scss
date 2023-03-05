@@ -1,0 +1,76 @@
+@import 'utils';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.for_page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: $lighterColor;
+}
+
+//btn
+.myBtn {
+    font-size: $fontS15;
+    background: $vividColor;
+    color: $lighterColor;
+    padding: 15px 35px;
+    font-weight: 700;
+    line-height: 30px;
+    border: 2px $vividColor solid;
+    transition: all 0.4s linear;
+
+    &:hover {
+        background: $lessVividColor;
+        border: 2px $lessVividColor solid;
+    }
+}
+
+h2 {
+    color: $vividColor;
+    font-size: $fontS14;
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: $fontS32;
+    line-height: 38px;
+    color: $darkestColor;
+}
+

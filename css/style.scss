@@ -1,0 +1,547 @@
+@import 'utils';
+@import 'general';
+
+header {
+    .container {
+        position: relative;
+        padding: 30px 0 20px 0;
+
+        ul {
+            margin-right: 120px;
+        }
+
+        a {
+            color: $darkestColor;
+            padding: 15px 10px;
+            transition: 0.2s all linear;
+
+            &:hover {
+                color: $vividColor;
+            }
+        }
+    }
+
+    .gamburger_menu {
+        display: none; 
+    }
+}
+
+.banner {
+    background: url("../images/banner.webp") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: $lighterColor;
+
+    .container {
+        padding: 240px 0 350px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: $fontS70;
+        margin-bottom: 40px;
+    }
+
+    a:nth-child(2) {
+        margin-right: 28px;
+    }
+
+    .myBtn {
+        background: transparent;
+
+        &:hover {
+            background: $vividColor;
+            border: 2px solid $vividColor;
+        }
+    }
+}
+
+.about_us {
+    padding: 50px 0 60px 30px;
+
+    .about_us_logo {
+        font-size: 150px;
+        line-height: 145px;
+        letter-spacing: 0.1px;
+        color: #F7F7F7;
+    }
+
+    h2 {
+        padding: 20px 0;
+    }
+
+    .row_about_us1 {
+        margin: 40px 0 50px 0;
+
+        h3 {
+            font-size: $fontS40;
+            line-height: 54px;
+        }
+        .about_us_del_padd {
+            padding-left: 80px;
+        }
+
+        .p2 {
+            font-size: $fontS18;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: $darkestColor;
+        }
+
+        .p3 {
+            font-size: $fontS15;
+            line-height: 26px;
+            color: $greyColor;
+        }
+    }
+
+    .row_about_us2 {
+        margin: 50px 0 150px 0;
+
+        .p-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .p1 {
+            font-size: $fontS24;
+            line-height: 45px;
+            color: $darkestColor;
+            margin: 70px 0 0px 0;
+
+            span {
+                color: $vividColor;
+            }
+        }
+
+        .p2 {
+            font-size: $fontS20;
+            line-height: 20px;
+            color: $darkestColor;
+        }
+
+        .p3 {
+            font-size: $fontS12;
+            line-height: 22px;
+            letter-spacing: 1.8px;
+            color: $lighestGreyColor;
+        }
+    }
+
+    .row_about_us3 {
+        margin-bottom: 50px;
+
+        .about_us_card {
+            h3 {
+                font-size: $fontS24;
+                line-height: 38px;
+                color: $darkColor;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: $fontS15;
+                line-height: 26px;
+                color: $greyColor;
+            }
+        }
+    }
+
+    .row_about_us4 {
+
+        .item {
+            height: 4px;
+            width: 50%;
+            background: $LessLighterColor;
+            display: inline-block;
+        }
+
+        .circle_img {
+            margin: 0 30px;
+        }
+    }
+}
+
+.latest_work {
+    padding: 60px 0 0 0;
+
+    .latest_work_logo {
+        font-size: 150px;
+        line-height: 145px;
+        letter-spacing: 0.1px;
+        color: #F7F7F7;
+    }
+}
+
+.check_box {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    height: 100%;
+
+    .cb_item {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(255, 255, 255, 0.8);
+        padding: 25px;
+        width: 100%;
+
+        label {
+            font-size: $fontS24;
+            line-height: 33px;
+            color: $darkestColor;
+        }
+
+        input {
+            width: 35px;
+        }
+    }
+
+    .cb_img {
+        padding: 25px 15px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .cb_img_1 {
+        background: url('../images/cb-image1.webp') no-repeat;
+        background-size: cover;
+        max-height: 720px;
+        min-height: 360px;
+        background-position: center center;
+    }
+
+    .cb_img_2 {
+        background: url('../images/cb-image2.webp') no-repeat;
+        background-size: cover;
+        max-height: 720px;
+        min-height: 360px;
+        width: 100%;
+        background-position: center center;
+    }
+
+    .cb_img_3 {
+        background: url('../images/cb-image3.webp') no-repeat;
+        background-size: cover;
+        max-height: 1440px;
+        min-height: 720px;
+        background-position: center center;
+    }
+
+    .cb_img_4 {
+        background: url('../images/cb-image4.webp') no-repeat;
+        background-size: cover;
+        max-height: 720px;
+        min-height: 360px;
+        background-position: center center;
+    }
+
+    .cb_img_5 {
+        background: url('../images/cb-image1.webp') no-repeat;
+        background-size: cover;
+        max-height: 720px;
+        min-height: 360px;
+        background-position: center center;
+    }
+}
+
+.our_skills {
+    padding: 115px 0 50px 0;
+
+    h3 {
+        font-size: $fontS32;
+        line-height: 38px;
+        color: $darkestColor;
+
+    }
+
+    .p2 {
+        font-size: $fontS14;
+        line-height: 26px;
+        color: $greyColor;
+    }
+
+    .our_skills_block_2 {
+        padding-left: 55px;
+    }
+
+    .skills_scale {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .line {
+        font-size: $fontS18;
+        line-height: 25px;
+        color: $darkestColor;
+        display: inline-block;
+    }
+
+    .percentage {
+        display: inline-block;
+        font-size: $fontS15;
+        line-height: 23px;
+        color: $greyColor;
+    }
+
+    .outline {
+        width: 100%;
+        height: 10px;
+        background: #eeeeee;
+        margin-bottom: 40px;
+    }
+
+    .inline {
+        width: 90%;
+        height: 10px;
+        background: linear-gradient(to right, red, orange);
+    }
+
+    .inline2 {
+        width: 80%;
+    }
+
+    .inline3 {
+        width: 95%;
+    }
+}
+
+.our_team {
+    padding: 50px 0 100px 0;
+
+    h3 {
+        line-height: 42px;
+    }
+
+    .team_img {
+        width: 100%;
+        position: relative;
+    }
+
+    .team_photos {
+        margin: 40px 0 80px 0;
+        row-gap: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .team_desc {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+
+        font-size: $fontS24;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: $lighterColor;
+        text-shadow: 1px 1px 1px black;
+
+        span {
+            font-size: $fontS14;
+            line-height: 24px;
+            color: #FCFCFC;
+        }
+    }
+}
+
+.testimonials {
+    background: $purpleColor;
+    padding: 70px 0 200px 0;
+
+
+    .testimonials_word {
+        font-size: 200px;
+        line-height: 220px;
+        text-align: center;
+        color: rgba(170, 170, 170, 0.1);
+        position: relative;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+
+    .testimonials_desc {
+        font-size: $fontS18;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $lighterColor;
+        margin: 30px 150px;
+    }
+
+    .testimonial_author {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            display: inline-block;
+            font-size: $fontS14;
+            line-height: 22px;
+            color: $lighterColor;
+        }
+    }
+}
+
+.daily_planet {
+    padding: 120px 0 50px 0;
+
+    h3 {
+        line-height: 42px;
+        margin: 45px 0 25px 0;
+    }
+
+    .news_links_date {
+        font-size: $fontS15;
+        line-height: 21px;
+        margin: 20px 0;
+
+        a {
+            color: $vividColor;
+            margin-right: 10px;
+            padding: 20px 0;
+
+            &:hover {
+                color: $lessVividColor
+            }
+        }
+
+        span {
+            color: $greyColor;
+            padding: 20px 0;
+        }
+    }
+
+    .desc {
+        font-size: $fontS24;
+        line-height: 33px;
+        color: $darkestColor;
+        margin-bottom: 36px;
+    }
+
+    .view_more {
+        color: $vividColor;
+        font-size: $fontS15;
+        line-height: 21px;
+
+        &:hover {
+            color: $lessVividColor;
+        }
+    }
+}
+
+.contact_us {
+    padding: 50px 0 100px 0;
+
+    .address_and_info {
+        span {
+            font-size: $fontS14;
+            line-height: 20px;
+            color: $greyColor;
+            letter-spacing: 2px;
+        }
+
+        font-size: $fontS23;
+        line-height: 33px;
+        color: $darkestColor;
+        margin-bottom: 40px;
+    }
+
+    .form {
+        padding-left: 50px;
+
+        .inputs {
+            width: 100%;
+            display: flex;
+            column-gap: 30px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px 25px;
+            outline: none;
+            border: 1px solid $lighestGreyColor;
+            resize: none;
+
+            &::placeholder {
+                font-size: $fontS14;
+                line-height: 21px;
+                color: $greyColor;
+
+            }
+        }
+
+        textarea {
+            margin: 30px 0 65px 0;
+            height: 160px;
+        }
+    }
+}
+
+footer {
+    background: black;
+    padding: 100px;
+
+    .logo a {
+        font-size: $fontS40;
+        line-height: 52px;
+        color: $lighterColor;
+    }
+
+    .text {
+        font-size: $fontS15;
+        line-height: 22px;
+        color: rgba(255, 255, 255, 0.6);
+        padding: 27px 0;
+
+        span {
+            margin: 0 10px;
+        }
+    }
+
+    .footer_flex {
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            font-size: $fontS24;
+            line-height: 31px;
+            color: $lighterColor;
+
+            li a {
+                font-size: $fontS14;
+                line-height: 20px;
+                color: $lightGreyColor;
+            }
+
+            li:first-child {
+                margin-top: 15px;
+            }
+
+            li:last-child {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .rights {
+        font-size: $fontS15;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: $lightGreyColor;
+
+        span {
+            color: $lighterColor;
+        }
+    }
+}
