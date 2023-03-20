@@ -357,7 +357,6 @@ header {
     background: $purpleColor;
     padding: 70px 0 200px 0;
 
-
     .testimonials_word {
         font-size: 200px;
         line-height: 220px;
@@ -366,6 +365,7 @@ header {
         position: relative;
         left: 45%;
         transform: translateX(-50%);
+        overflow-x: hidden;
     }
 
     .testimonials_desc {

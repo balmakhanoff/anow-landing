@@ -375,6 +375,7 @@ header .gamburger_menu {
   position: relative;
   left: 45%;
   transform: translateX(-50%);
+  overflow-x: hidden;
 }
 .testimonials .testimonials_desc {
   font-size: 18px;
